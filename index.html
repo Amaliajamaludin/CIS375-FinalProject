@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Accessibility Checklist</title>
+    <title>Checklist Page</title>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
-    <div>
-        <h1>Web Accessibility Checklist</h1>
-    </div>
+<body id="indexbody">
 
-    <div>
+    <header class="indexH">
+         <h1>Web Accessibility Checklist</h1>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Checklist</a></li>
+            <li><a href="https://www.w3.org/TR/WCAG21/">Resources</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+
+    <div class = "text">
         <h2>Semantic Elements</h2>
         <h3>Use semantic HTML elements for content structure</h3>
         <input type="radio" name="category1_1" value="1" id="yes">
@@ -196,92 +207,15 @@
     </div>
 
 
-
-    <!-- <div>
-        <h2>Semantic Elements</h2>
-        <input type="checkbox" class="category1" value="category1" id="checklist1category1">
-        <label for="checklist1category1">Use semantic HTML elements for content structure</label>
-        <br>
-        <input type="checkbox" class="category1" value="category1" id="checklist2category1">
-        <label for="checklist2category1">All headings are clear and logical</label>
-        <br>
-        <input type="checkbox" class="category1" value="category1" id="checklist3category1">
-        <label for="checklist3category1">Heading accurately describe the content they precede</label>
-        <br>
-
-        <input type="checkbox" class="category1" value="category1" id="checklist4category1">
-        <label for="checklist4category1">Evaluate the website's content structure using a screen reader to confirm its accessibility and ensure it is comprehensible.</label>
-        <br>
-        <input type="checkbox" class="category1" value="category1" id="checklist5category1">
-        <label for="checklist5category1">The website's content structure is consistent across different devices and screen sizes.</label>
-        <br>
-    </div>
-
-    <div>
-        <h2>Text Alternatives for Images and Multimedia</h2>
-        <input type="radio" id="applicable2" name="radio2" checked>
-        <label for="applicable2">Applicable</label>
-        <input type="radio" id="notApplicable2" name="radio2">
-        <label for="notApplicable2">Not Applicable</label>
-        <br>
-        <h3></h3>
-        <input type="checkbox" class="category2" value="category2" id="checklist1category2">
-        <label for="checklist1category2">All images have descriptive alt text</label><br>
-        <input type="checkbox" class="category2" value="category2" id="checklist2category2">
-        <label for="checklist2category2">All multimedia content, such as videos and audio, have accurate and synchronized captions</label><br>
-        <input type="checkbox" class="category2" value="category2" id="checklist3category2">
-        <label for="checklist3category2">Test functionality of alt text using screen readers</label><br>
-    </div>
-
-    <div>
-        <h2>Keyboard Accessibility</h2>
-        <input type="checkbox" class="category3" value="category3" id="checklist1category3">
-        <label for="checklist1category3">All interactive elements can be operated using a keyboard alone</label>
-        <br>
-        <input type="checkbox" class="category3" value="category3" id="checklist2category3">
-        <label for="checklist2category3">Keyboard is accessible inside of dynamic components such as dropdown menus or others</label>
-        <br>
-        <input type="checkbox" class="category3" value="category3" id="checklist3category3">
-        <label for="checklist3category3">Website's keyboard accessibility works across different browsers</label>
-        <br>
-    </div>
-
-    <div>
-        <h2>Text Size and Spacing</h2>
-        <input type="checkbox" class="category4" value="category4" id="checklist1category4">
-        <label for="checklist1category4">Use relative units such as em or rem for font sizes to ensure scalibility</label>
-        <br>
-        <input type="checkbox" class="category4" value="category4" id="checklist2category4">
-        <label for="checklist2category4">Allow users to resize text without loss of content or functionality</label>
-        <br>
-        <input type="checkbox" class="category4" value="category4" id="checklist3category4">
-        <label for="checklist3category4">Ensure that text remais readable and maintains sufficient contrast at increased size</label>
-        <br>
-        <input type="checkbox" class="category4" value="category4" id="checklist4category4">
-        <label for="checklist4category4">Test the website with text scaling enabled in different browsers</label>
-        <br>
-    </div>
-
-    <div>
-        <h2>Color Contrast</h2>
-        <input type="checkbox" class="category5" value="category5" id="checklist1category5">
-        <label for="checklist1category5">Use high-contrast color schemes for text and background elements</label>
-        <br>
-        <input type="checkbox" class="category5" value="category5" id="checklist2category5">
-        <label for="checklist2category5">All links have distinguishable colors and remain clear to color-blind users</label>
-        <br>
-        <input type="checkbox" class="category5" value="category5" id="checklist3category5">
-        <label for="checklist3category5">Ensure the website's color contrast is displayed correctly across various devices and display settings</label>
-        <br>
-    </div> -->
-
-    <div>
-        <button id="submit">submit</button>
+    <div id="submit">
+        <button class="submit-button">Submit</button>
         <!-- <input type="submit" name="submit" value="submit"> -->
     </div>
-    <div id="finalResult">
-        
-    </div>
+    <br>
+    <br>
 
+    <footer>
+        <p>&copy; 2023 Web Accessibility Checklist. All rights reserved.<!-- href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Use<--></p>
+    </footer>
 </body>
 </html>
